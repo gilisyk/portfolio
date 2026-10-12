@@ -1,5 +1,9 @@
 {
   "outputDirectory": ".",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/strata", "destination": "https://strata-silk-ten.vercel.app/strata" },
+    { "source": "/strata/:path*", "destination": "https://strata-silk-ten.vercel.app/strata/:path*" }
+  ]
 }
