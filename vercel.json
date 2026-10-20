@@ -3,7 +3,11 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/strata", "destination": "https://strata-silk-ten.vercel.app/strata" },
-    { "source": "/strata/:path*", "destination": "https://strata-silk-ten.vercel.app/strata/:path*" }
+    { "source": "/ledge", "destination": "https://strata-silk-ten.vercel.app/ledge" },
+    { "source": "/ledge/:path*", "destination": "https://strata-silk-ten.vercel.app/ledge/:path*" }
+  ],
+  "redirects": [
+    { "source": "/strata", "destination": "/ledge", "permanent": false },
+    { "source": "/strata/:path*", "destination": "/ledge/:path*", "permanent": false }
   ]
 }
